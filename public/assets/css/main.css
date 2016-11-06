@@ -1,0 +1,321 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #343333;
+  font-family: geneva;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(to bottom, rgba(0,0,0, 0.9) 25%, rgba(67,67,67, 0.15));
+  overflow-x: hidden;
+}
+header h1 {
+  color: white;
+  display: inline-block;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+header nav, header nav ul, header nav ul li {
+  display: inline-block;
+}
+header nav {
+  float: right;
+  margin: 30px 0;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li:first-of-type {
+  background: url('../imgs/hamburger.png') no-repeat center;
+  height: 34px;
+  text-indent: -9999px;
+  width: 50px;
+}
+header nav ul li:not(:first-of-type) {
+  display: none;
+}
+header nav ul li:not(:first-of-type) {
+  padding-right: 30px;
+}
+header nav ul li:last-child {
+  background-color: #2B00FF;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+header nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;;
+}
+header nav ul li:not(:last-child) a:hover {
+  border-bottom: solid 1px white;
+}
+#cta {
+  background: url('../imgs/cta.png') no-repeat center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+#cta article {
+  margin: 75px auto;
+  width: 375px;
+}
+#cta article h2 {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+#cta article h2:not(:last-of-type) {
+  padding: 10px 0;
+}
+#cta article h2 span {
+  color: #4AE012;
+}
+#cta article div {
+  margin: 20px auto;
+  width: 375px
+}
+#cta article div a {
+  border: solid 2px #2B00FF;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  display: inline;
+  font-size: 30px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+#cta article div a:first-of-type {
+  margin-right: 20px;
+}
+#features, #pricing {
+  background-color: #F5F8FA;
+}
+#features h3, #testimonials h3, #pricing h3, #contact h3 {
+  font-size: 45px;
+  margin: 0 auto 20px auto;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+#testimonials h3, #contact h3 {
+  color: white
+}
+#features article.featureList, #contact article.contactList {
+  margin: 0 auto;
+  width: 100%;
+}
+#features article.featureList:first-of-type {
+  margin-bottom: 20px;
+}
+#features article.featureList:last-of-type {
+  padding-bottom: 40px;
+}
+#features article.featureList div.feature, #contact article.contactList div.contact {
+  display: inline-block;
+  width: 100%;
+}
+#features article.featureList div.feature h4, #contact article.contactList div.contact h4 {
+  font-size: 35px;
+  margin: 0 auto;
+  text-align: center;
+  width: 330px;
+}
+#features article.featureList div.feature h4 {
+  color: #2B00FF;
+}
+#contact article.contactList div.contact h4 {
+  color: #4AE012;
+}
+#features article.featureList div.feature p, #contact article.contactList div.contact p {
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  width: 75%;
+}
+#testimonials, #contact {
+  background-color: #343333;
+}
+#testimonials article img {
+  display: block;
+  margin: 0 auto;
+}
+#testimonials article h4 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+#pricing article {
+  margin: 0 auto;
+  width: 100%;
+}
+div.planWrapper {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 280px;
+}
+div.planWrapper:not(:last-of-type) {
+  margin-right: 30px;
+}
+div.planWrapper div.planContainer {
+  border: solid 1px black;
+  margin-bottom: 10px;
+}
+div.planWrapper div.planContainer #basic, div.planWrapper div.planContainer #plus, div.planWrapper div.planContainer #premium {
+  border-bottom: solid 1px black;
+}
+div.planWrapper div.planContainer h4 {
+  color: #2B00FF;
+  font-size: 28px;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+}
+div.planWrapper div.planContainer div p {
+  font-size: 55px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: center;
+}
+div.planWrapper div.planContainer > p {
+  font-size: 23px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+div.planWrapper div.planContainer > p:not(:last-of-type) {
+  border-bottom: solid 1px black;
+  margin: 10px 0;
+}
+#contact article.contactList div.contact p {
+  color: white;
+}
+#contact article.contactList div.contact:last-of-type p {
+  height: 55px;
+}
+#contact article.contactList div.contact:last-of-type p:first-of-type::before {
+  background-image: url('../imgs/facebook.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  content: "img";
+}
+#contact article.contactList div.contact:last-of-type p:nth-of-type(2)::before {
+  background-image: url('../imgs/twitter.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  content: "img";
+}
+#contact article.contactList div.contact:last-of-type p:last-of-type::before {
+  background-image: url('../imgs/instagram.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  content: "img";
+}
+
+
+
+@media screen and (min-width: 460px) {
+  header h1 {
+    margin-left: 30px;
+  }
+  #features h3, #testimonials h3, #pricing h3, #contact h3 {
+    width: 460px;
+  }
+}
+@media screen and (min-width: 490px) {
+  header nav {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 595px) {
+  #cta article {
+    width: 595px;
+  }
+  #cta article h2 {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 617px) {
+  #features h3, #testimonials h3, #pricing h3, #contact h3 {
+    width: 617px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #cta article {
+    width: 800px;
+  }
+}
+@media screen and (min-width: 985px) {
+  #cta article {
+    margin: 130px auto;
+    width: 983px;
+  }
+  #cta article h2:not(:last-of-type) {
+    padding: 0;
+  }
+  #pricing article {
+    width: 911px;
+  }
+}
+@media screen and (min-width: 1026px) {
+  header nav ul li:first-of-type {
+    display: none;
+  }
+  header nav ul li:not(:first-of-type) {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1040px) {
+  #features article.featureList div.feature:not(:last-of-type), #contact article.contactList div.contact:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  #features article.featureList, #contact article.contactList {
+    width: 971px;
+  }
+  #features article.featureList div.feature, #contact article.contactList div.contact {
+    width: 300px;
+  }
+  #features article.featureList div.feature p, #contact article.contactList div.contact p {
+    margin: 0;
+    width: 94%;
+  }
+  #testimonials article {
+    overflow: hidden;
+  }
+  #testimonials article img {
+    display: inline-block;
+    float: left;
+    margin: 0 75px 25px 75px;
+  }
+  #testimonials article h4 {
+    display: inline;
+    float: left;
+    margin: 0;
+    text-align: justify;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1125px) {
+  #features article.featureList, #contact article.contactList {
+    width: 1121px;
+  }
+  #features article.featureList div.feature, #contact article.contactList div.contact {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #features article.featureList, #contact article.contactList {
+    width: 1277px;
+  }
+  #features article.featureList div.feature, #contact article.contactList div.contact {
+    width: 402px;
+  }
+}
